@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+
+.notes * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notes_sidebar {
+    width: 350px;
+    padding: 2em 1.5em;
+    flex-shrink: 0;
+    border-right: 2px solid Gainsboro;
+    overflow-y: auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.7em;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.notes_add {
+    background: #6E42C0;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes_add:hover {
+    background: #8C4DF4;
+}
+
+.notes_list_item {
+    cursor: pointer;
+}
+
+.notes_list_item_selected {
+    font-weight: bold;
+    background: #E8E8E8;
+    border-radius: 7px;
+    /* outline: LightGray solid 1px; */
+}
+
+.note_item_title {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.note_item_body {
+    padding: 0 10px;
+}
+
+.note_item_time {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+    padding: 10px;
+}
+
+.notes_preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notes_title {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.notes_body {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+}
